@@ -17,7 +17,7 @@ const ShowCaseProduct = lazy(() => import("../pages/ShowCaseProduct"));
 const AppRouter = () => {
     return (
         <AnimalesProvider>
-            <Router>
+            <Router basename="/Fur-Ever-Care">
                 <Suspense fallback={<div>Loading...</div>}>
                     <Routes>
                         <Route path="/" element={<Home />} />
