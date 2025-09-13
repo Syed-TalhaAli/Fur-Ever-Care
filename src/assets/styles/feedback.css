@@ -1,0 +1,84 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(30, 58, 138, 0.3);
+  overflow: hidden;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.2em;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+.form-container {
+  padding: 30px 20px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #1e3a8a;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1e40af;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #1e3a8a, #1e40af);
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+}
+
+.required {
+  color: #dc2626;
+}

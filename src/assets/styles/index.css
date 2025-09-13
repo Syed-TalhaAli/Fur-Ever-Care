@@ -18,181 +18,7 @@ section {
 
 /* master layout end */
 
-/* auth page style start */
-.authOverly {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
 
-.authContainer {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    max-width: 900px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin: 0 auto;
-}
-
-.authHeading {
-    font-size: 2.5rem;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    margin-bottom: 10px;
-    font-weight: 700;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.subtitle {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-
-.tagline {
-    font-size: 1.1rem;
-    color: #e74c3c;
-    font-weight: 600;
-    margin-bottom: 40px;
-    text-shadow: 0 1px 2px rgba(231, 76, 60, 0.2);
-}
-
-.form-section {
-    text-align: left;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.name-input {
-    width: 100%;
-    padding: 12px 20px;
-    border: 2px solid #e0e0e0;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: linear-gradient(45deg, #fff, #f8f9ff);
-}
-
-.name-input:focus {
-    outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 10px rgba(102, 126, 234, 0.2);
-    transform: translateY(-2px);
-}
-
-.radio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.radio-option {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid #e0e0e0;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: linear-gradient(45deg, #fff, #f8f9ff);
-    position: relative;
-}
-
-.radio-option:hover {
-    border-color: #667eea;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(102, 126, 234, 0.1);
-}
-
-.radio-option.selected {
-    border-color: #667eea;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    color: white;
-    box-shadow: 0 5px 10px rgba(102, 126, 234, 0.3);
-}
-
-.radio-option input[type="radio"] {
-    margin-right: 15px;
-    width: 20px;
-    height: 20px;
-    accent-color: #667eea;
-}
-
-.radio-option .icon {
-    margin-right: 15px;
-    font-size: 1.5rem;
-}
-
-.radio-option .label-text {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.submit-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
-
-.submit-btn:hover::before {
-    left: 100%;
-}
-
-.submit-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-}
-
-/* auth page style end */
 
 /* slider style start */
 .mySwiper {
@@ -743,3 +569,26 @@ label {
 }
 
 /* reviews section end */
+
+.loderContainer {
+    width: 100%;
+    height: 100vh;
+    background: #aad5f1;
+    display: grid;
+    place-items: center;
+}
+
+.loader {
+    width: 70px;
+    aspect-ratio: 1;
+    border: 5px solid #2980b9;
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: loader 0.6s linear infinite; 
+}
+
+@keyframes loader {
+    100% {
+        transform: rotate(360deg);
+    }
+}

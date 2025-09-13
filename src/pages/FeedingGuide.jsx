@@ -2,13 +2,14 @@ import React from 'react'
 import Header from "../components/Header"
 import MasterLayout from "../layouts/MasterLayout"
 import "../assets/styles/petstyle.css"
+import Footer from '../components/Footer'
 
 const FeedingGuide = () => {
     return (
         <>
             <Header />
             <MasterLayout>
-                <section className="feedingSection">
+                <div className="feedingSection">
 
                     <div className="heading">
                         <h1><span className="highlight">Feeding Guide</span></h1>
@@ -21,10 +22,10 @@ const FeedingGuide = () => {
                             well-being.</p>
                     </div>
 
-                    <section className="grid">
+                    <div className="grid">
                         <article className="card dog" aria-labelledby="dog-title">
                             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-                                <div className="logo" aria-hidden> <i class="fa-solid fa-dog" style={{ color: "#1E3A8A" }}></i></div>
+                                <div className="logo" aria-hidden> <i className="fa-solid fa-dog" style={{ color: "#1E3A8A" }}></i></div>
                                 <div>
                                     <h3 id="dog-title">Dog Feeding Guide</h3>
                                     <div className="muted">By weight &amp; age — portions in grams</div>
@@ -78,7 +79,7 @@ const FeedingGuide = () => {
 
                         <article className="card cat" aria-labelledby="cat-title">
                             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-                                <div className="logo" aria-hidden><i class="fa-solid fa-cat" style={{ color: "#1E3A8A" }} ></i></div>
+                                <div className="logo" aria-hidden><i className="fa-solid fa-cat" style={{ color: "#1E3A8A" }} ></i></div>
                                 <div>
                                     <h3 id="cat-title">Cat Feeding Guide</h3>
                                     <div className="muted">By weight &amp; purpose — portions in grams</div>
@@ -122,14 +123,15 @@ const FeedingGuide = () => {
 
                             <div className="note">Cats prefer small, frequent meals — monitor body condition score.</div>
                         </article>
-                    </section>
+                    </div>
 
                     <div className="subheading">
                         <p>For more guidence please book an appointment</p>
                         <button>Plan My Pet’s Meals</button>
                     </div>
-                </section>
+                </div>
             </MasterLayout>
+            <Footer/>
         </>
     )
 }

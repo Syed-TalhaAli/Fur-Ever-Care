@@ -1,0 +1,204 @@
+:root {
+    --accent: #1f8a70;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --bg: #f6f7fb;
+    --danger: #d9534f;
+    --radius: 12px;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 20px
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0
+}
+
+p.lead {
+    color: var(--muted);
+    margin: 4px 0 0
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px
+}
+
+@media (max-width:800px) {
+    .grid {
+        grid-template-columns: 1fr
+    }
+}
+
+.card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(12, 25, 40, 0.06)
+}
+
+.big-card {
+    padding: 28px
+}
+
+/* Emergency Contacts */
+.contacts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.contact .meta {
+    flex: 1
+}
+
+.contact .meta .title {
+    font-weight: 600
+}
+
+.contact .meta .sub {
+    color: var(--muted);
+    font-size: 13px
+}
+
+.contact a {
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #f3f8f6;
+    border: 1px solid rgba(31, 138, 112, 0.08);
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 600
+}
+
+/* Hotline */
+.hotline {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start
+}
+
+.hotline .number {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--danger)
+}
+
+.hotline .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, var(--danger), #b43a35);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.hotline small {
+    color: var(--muted)
+}
+
+/* Clinics */
+.clinic-list {
+    display: grid;
+    gap: 12px
+}
+
+.clinic {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(15, 23, 42, 0.04)
+}
+
+.clinic .left {
+    flex: 1
+}
+
+.clinic .actions {
+    display: flex;
+    gap: 8px
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.btn.ghost {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid rgba(31, 138, 112, 0.12)
+}
+
+/* First aid */
+.accordion {
+    border-top: 1px solid rgba(12, 25, 40, 0.04)
+}
+
+.acc-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(12, 25, 40, 0.04)
+}
+
+.acc-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer
+}
+
+.acc-body {
+    margin-top: 10px;
+    display: none;
+    color: var(--muted)
+}
+
+
+/* small helpers */
+.muted {
+    color: var(--muted)
+}
+
+.chip {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #f1f5f9;
+    font-weight: 600;
+    font-size: 13px
+}

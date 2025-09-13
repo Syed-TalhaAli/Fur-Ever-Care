@@ -3,6 +3,7 @@ import Header from "../components/Header"
 import MasterLayout from "../layouts/MasterLayout"
 import "../assets/styles/petprofile.css"
 import Gallery from '../parts/Gallery'
+import Footer from '../components/Footer'
 
 
 
@@ -13,6 +14,7 @@ const PetProfile = () => {
             <MasterLayout>
               <Gallery/>
             </MasterLayout>
+            <Footer/>
         </>
     )
 }
