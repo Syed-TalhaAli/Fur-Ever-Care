@@ -1,18 +1,20 @@
 import React from 'react'
-import Section from "../components/Section"
-import MasterLayout from "../layouts/MasterLayout"
-import Appointment from "../parts/Appointment"
-import Gallery from "../parts/Gallery"
-import HomeAboutSec from "../parts/HomeAboutSec"
-import Reviews from "../parts/Reviews"
-import Slider from "../parts/Slider"
-import WhyChooseUs from "../parts/WhyChooseUs"
-import Header from '../components/Header'
+// import Section from "../components/Section"
+// import MasterLayout from "../layouts/MasterLayout"
+// import Appointment from "../parts/Appointment"
+// import Gallery from "../parts/Gallery"
+// import HomeAboutSec from "../parts/HomeAboutSec"
+// import Reviews from "../parts/Reviews"
+// import Slider from "../parts/Slider"
+// import WhyChooseUs from "../parts/WhyChooseUs"
+// import Header from '../components/Header'
 
 const Home = () => {
   return (
+    
     <>
-    <Header/>
+    <h1>Comming Soon</h1>
+    {/* <Header/>
       <MasterLayout>
         <Slider />
         <Section>
@@ -27,7 +29,7 @@ const Home = () => {
         <Section>
           <Reviews />
         </Section>
-      </MasterLayout>
+      </MasterLayout> */}
     </>
   )
 }
