@@ -1,0 +1,94 @@
+{
+  "petData": [
+    {
+      "id": 1,
+      "type": "cat",
+      "image": "/Gallery/cat 1.jpg",
+      "name": "Whiskers",
+      "age": "8 months",
+      "breed": "Tabby Cat",
+      "shortDescription": "Playful kitten who enjoys chasing toys and cuddling with humans."
+    },
+    {
+      "id": 2,
+      "type": "cat",
+      "image": "/Gallery/cat 2.jpg",
+      "name": "Mittens",
+      "age": "7 years",
+      "breed": "Persian Cat",
+      "shortDescription": "Gentle senior cat who loves quiet companionship and sunny windows."
+    },
+    {
+      "id": 3,
+      "type": "cat",
+      "image": "/Gallery/cat 3.jpg",
+      "name": "Luna",
+      "age": "4 months",
+      "breed": "Siamese Cat",
+      "shortDescription": "Curious and vocal kitten who loves exploring and meeting new people."
+    },
+    {
+      "id": 4,
+      "type": "cat",
+      "image": "/Gallery/cat 4.jpg",
+      "name": "Princess",
+      "age": "3 years",
+      "breed": "Maine Coon Cat",
+      "shortDescription": "Majestic cat with a gentle personality who loves being pampered."
+    },
+    {
+      "id": 5,
+      "type": "cat",
+      "image": "/Gallery/cat 5.jpg",
+      "name": "Shadow",
+      "age": "2 years",
+      "breed": "Black Cat",
+      "shortDescription": "Independent but affectionate cat who loves cozy spots and treats."
+    },
+    {
+      "id": 6,
+      "type": "cat",
+      "image": "/Gallery/cat 6.jpg",
+      "name": "Cleo",
+      "age": "1 year",
+      "breed": "British Shorthair",
+      "shortDescription": "Calm and loving cat who enjoys gentle play and sunny naps."
+    },
+    {
+      "id": 7,
+      "type": "dog",
+      "image": "/Gallery/dog 1.jpg",
+      "name": "Buddy",
+      "age": "3 years",
+      "breed": "Golden Retriever",
+      "shortDescription": "Friendly and energetic dog who loves playing fetch and swimming."
+    },
+    {
+      "id": 8,
+      "type": "dog",
+      "image": "/Gallery/dog 2.jpg",
+      "name": "Charlie",
+      "age": "6 months",
+      "breed": "Beagle",
+      "shortDescription": "Adorable puppy with lots of energy and love to give to a family."
+    },
+    {
+      "id": 9,
+      "type": "dog",
+      "image": "/Gallery/dog 3.jpg",
+      "name": "Rocky",
+      "age": "1.5 years",
+      "breed": "German Shepherd",
+      "shortDescription": "Loyal and intelligent dog perfect for active families and training."
+    },
+    {
+      "id": 10,
+      "type": "dog",
+      "image": "/Gallery/dog 4.jpg",
+      "name": "Max",
+      "age": "5 years",
+      "breed": "Labrador Mix",
+      "shortDescription": "Well-trained dog who gets along great with kids and other pets."
+    }
+  ]
+}
