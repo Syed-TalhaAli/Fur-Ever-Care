@@ -6,11 +6,6 @@ const Appointment = () => {
             <div className="form-section">
                 <div className="form-container">
                     <h1 className="form-title">Get A <span className="highlight">Service Now!</span></h1>
-                    <p className="form-subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim labore iure
-                        repellendus quasi nobis.
-                    </p>
-
                     <form className="contact-form" id="serviceForm">
                         <div className="form-row">
                             <div className="form-group">

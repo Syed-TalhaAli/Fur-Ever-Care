@@ -2,10 +2,13 @@ import "../assets/styles/header.css";
 import Logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import Userdrop from "./Userdrop";
+import { useState } from "react";
 
 const Header = () => {
-  const getUserDetails = JSON.parse(localStorage.getItem("fureverCareUser")) || {};
+  const getUserDetails =
+    JSON.parse(localStorage.getItem("fureverCareUser")) || {};
   const { userType } = getUserDetails;
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="header">
@@ -15,7 +18,15 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav className="navbar">
+      <nav className={`navbar ${open ? "active" : ""}`}>
+        <img src={Logo} alt="logo" id="sm-logo" />
+
+        <i
+          className="fa-solid fa-xmark"
+          id="fa-mark"
+          onClick={() => setOpen(false)}
+        ></i>
+
         <div className="nav-container">
           <ul className="nav-menu">
             {userType === "owner" && (
@@ -67,10 +78,15 @@ const Header = () => {
             <li className="nav-item">
               <Userdrop />
             </li>
-
           </ul>
         </div>
       </nav>
+
+      <i
+        className="fa-solid fa-bars"
+        onClick={() => setOpen(true)}
+        id="fa-bar"
+      ></i>
     </header>
   );
 };
