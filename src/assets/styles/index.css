@@ -225,9 +225,6 @@ section {
 
     .homeAboutSecGridItem1 {
         padding: 10px;
-        width: 100% !important;
-        text-align: center;
-        background: darkcyan;
     }
 
     .homeAboutSecGridItem1 h2 {
